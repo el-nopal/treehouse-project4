@@ -1,8 +1,26 @@
+// Partial imports
+@import "base/normalize";
+
+//--- Base ---/
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-size: 1em;
-  background-color: pink;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  background: red;
+}
+
+li {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
 }
