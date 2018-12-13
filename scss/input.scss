@@ -1,26 +1,182 @@
-// Partial imports
-@import "base/normalize";
+// Partial imports/
+@import "base/index";
 
-//--- Base ---/
+// @import "components/index";
 
+@import "utilities/index";
+
+//=== Base (the only elements allowed) ===/
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-size: 1em;
-  text-align: center;
-}
-
 ul {
   list-style: none;
-  text-decoration: none;
-  background: red;
+  padding: 0;
 }
 
-li {
-  display: block;
-  list-style: none;
-  text-decoration: none;
+p {
+  font-weight: 200;
+  line-height: 1.4;
+  text-align: left;
+}
+
+// === base only ===/
+
+// ---Navigation
+.nav__item {
+  [href] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    padding: 1.125em; //18px
+  }
+  [href="#type"] {
+    background-color: $first-multi;
+    color: white;
+  }
+}
+
+// ---typography
+.container {
+  font-size: 1em;
+  margin: 1.875em auto;
+  max-width: 85%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: $second-multi;
+  font-weight: bold;
+}
+
+.blockquote {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  border-radius: 5px;
+  border-left: 8px solid $first-multi;
+  padding: 0 20px;
+}
+
+.headline--primary {
+  text-align: left;
+  color: $first-multi;
+  font-size: 1.6875em; // 27px
+  padding: 0 1em;
+}
+
+.headline--secondary {
+  font-weight: 100;
+  text-align: left;
+}
+
+// ---form
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  [value="Login"] {
+    background-color: $second-multi;
+    color: white;
+    border-style: none;
+    border-radius: 7px;
+    padding: 16px;
+    margin: 1em 0;
+  }
+}
+
+.form__label--hidden {
+  visibility: hidden;
+}
+.form__input {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-style: none;
+  border-bottom: 7px solid $first-multi;
+  padding: 8px 16px;
+  margin: 0 20px;
+}
+
+//--- images section---
+.img--logo {
+  margin: 1em auto;
+}
+
+.img--frame {
+  max-width: 100%;
+  padding: .625em;
+  border: 1px solid black;
+}
+
+.img--avatar {
+  margin: 16px auto;
+}
+
+
+// --- buttons
+.btn--default {
+  background: $second-multi;
+}
+
+.btn--success {
+  background: $btn-success;
+}
+
+.btn--error {
+  background:$btn-error;
+}
+
+.btn--warning {
+  background: $btn-warning;
+}
+
+.btn--info {
+  background: $btn-info;
+}
+
+
+
+//  --- grid System
+
+.grid__row {
+
+  border: 1px solid black;
+  margin: 2em 0;
+}
+
+[class="grid__col--12 theme__colors"] {
+  background: $col-12;
+}
+
+[class="grid__col--6 theme__colors"] {
+  background: $col-6;
+}
+[class="grid__col--4 theme__colors"] {
+  background: $col-4;
+}
+[class="grid__col--3 theme__colors"] {
+  background: $col-3;
+}
+[class="grid__col--5 theme__colors"] {
+  background: $col-5;
+}
+[class="grid__col--7 theme__colors"] {
+  background: $col-7;
+}
+[class="grid__col--8 theme__colors"] {
+  background: $col-8;
+}
+[class="grid__col--7 theme__colors centered"] {
+  background: $col-7;
 }
