@@ -1,0 +1,49 @@
+// === Typography ===
+
+// -first- typo, look, border
+$first-multi: #58e1c1;
+// -second- link, login, default
+$second-multi: #51ddfc;
+
+@mixin flex-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// --- typography ---
+.container {
+  font-size: 1em;
+  margin: 1.875em auto;
+  max-width: 85%;
+  padding: 0 0.625em; //10px
+  @include flex-mobile;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: $second-multi;
+  font-weight: bold;
+}
+
+.blockquote {
+  font-size: 1.25em; //20px
+  font-weight: 500;
+  text-align: left;
+  border-radius: 5px;
+  border-left: 8px solid $first-multi;
+  padding: 0 1.25em; //20px
+}
+
+.headline--primary {
+  text-align: left;
+  color: $first-multi;
+  font-size: 1.6875em; // 27px
+  padding: 0 1em;
+}
+
+.headline--secondary {
+  font-weight: lighter;
+  text-align: left;
+}

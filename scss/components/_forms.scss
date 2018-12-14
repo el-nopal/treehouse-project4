@@ -1,0 +1,39 @@
+// === Forms ===
+
+// -first- typo, look, border
+$first-multi: #58e1c1;
+// -second- link, login, default
+$second-multi: #51ddfc;
+
+@mixin flex-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// --- forms ---
+.form {
+  @include flex-mobile;
+  [value="Login"] {
+    background-color: $second-multi;
+    color: white;
+    border-style: none;
+    border-radius: 7px;
+    padding: 16px;
+    margin: 20px 0;
+  }
+}
+
+.form__label--hidden {
+  visibility: hidden;
+}
+
+.form__input {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-style: none;
+  border-bottom: 7px solid $first-multi;
+  padding: 8px 16px;
+  margin: 5px 20px;
+}

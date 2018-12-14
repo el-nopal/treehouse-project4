@@ -1,0 +1,13 @@
+//--- images
+
+.img {
+  &--logo,
+  &--avatar {
+    margin: 1em auto;
+  }
+  &--frame {
+    max-width: 100%;
+    padding: .625em;
+    border: 1px solid black;
+  }
+}

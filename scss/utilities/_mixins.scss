@@ -1,0 +1,27 @@
+// === Mixins ===
+
+@mixin flex-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin button {
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 0;
+  margin: 0.625em 0; //10px
+}
+
+@mixin grid {
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}

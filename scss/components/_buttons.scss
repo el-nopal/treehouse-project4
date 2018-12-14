@@ -1,0 +1,52 @@
+// === Buttons ===
+
+// -second- link, login, default
+$second-multi: #51ddfc;
+
+$btn-success: #63cc82;
+$btn-error: #e4757a;
+$btn-warning: #fd7856;
+$btn-info: #927bc1;
+
+@mixin flex-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin button {
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 0;
+  margin: 0.625em 0; //10px
+}
+
+.grid__col--12 {
+  @include flex-mobile;
+  text-align: center;
+  .btn {
+    &--default {
+      background: $second-multi;
+      @include button;
+    }
+    &--success {
+      background: $btn-success;
+      @include button;
+    }
+    &--error {
+      background: $btn-error;
+      @include button;
+    }
+    &--warning {
+      background: $btn-warning;
+      @include button;
+    }
+    &--info {
+      background: $btn-info;
+      @include button;
+    }
+  }
+}

@@ -1,19 +1,17 @@
-/* ==== Navigation ==== */
+// ---Navigation
+
+$first-multi: #58e1c1;
 
 .nav__item {
   [href] {
-    text-decoration: none;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid black;
     text-align: center;
-
+    text-decoration: none;
     color: black;
     border-radius: 5px;
     padding: 1.125em; //18px
-    // margin: 0.625em 2.187em; //10px 35px
   }
   [href="#type"] {
     background-color: $first-multi;
