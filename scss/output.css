@@ -341,7 +341,7 @@ ul {
 }
 
 p {
-  font-weight: 200;
+  font-weight: normal;
   line-height: 1.4;
   text-align: left;
 }
@@ -395,7 +395,7 @@ p {
 }
 
 .headline--secondary {
-  font-weight: 100;
+  font-weight: lighter;
   text-align: left;
 }
 
@@ -410,7 +410,7 @@ p {
   border-style: none;
   border-radius: 7px;
   padding: 16px;
-  margin: 1em 0;
+  margin: 20px 0;
 }
 
 .form__label--hidden {
@@ -424,7 +424,7 @@ p {
   border-style: none;
   border-bottom: 7px solid #58e1c1;
   padding: 8px 16px;
-  margin: 0 20px;
+  margin: 5px 20px;
 }
 
 .img--logo {
@@ -438,64 +438,148 @@ p {
 }
 
 .img--avatar {
-  margin: 16px auto;
+  margin: 1em auto;
 }
 
-.btn--default {
+.grid__col--12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.grid__col--12 .btn--default {
   background: #51ddfc;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-style: none;
+  padding: 16px 0;
+  margin: 10px 0;
 }
-
-.btn--success {
+.grid__col--12 .btn--success {
   background: #63cc82;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-style: none;
+  padding: 16px 0;
+  margin: 10px 0;
 }
-
-.btn--error {
+.grid__col--12 .btn--error {
   background: #e4757a;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-style: none;
+  padding: 16px 0;
+  margin: 10px 0;
 }
-
-.btn--warning {
+.grid__col--12 .btn--warning {
   background: #fd7856;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-style: none;
+  padding: 16px 0;
+  margin: 10px 0;
 }
-
-.btn--info {
+.grid__col--12 .btn--info {
   background: #927bc1;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-style: none;
+  padding: 16px 0;
+  margin: 10px 0;
 }
 
 .grid__row {
-  border: 1px solid black;
-  margin: 2em 0;
+  margin: 1.125em 0;
 }
-
-[class="grid__col--12 theme__colors"] {
+.grid__row [class="grid__col--12 theme__colors"] {
   background: #80e8d1;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
 }
-
-[class="grid__col--6 theme__colors"] {
+.grid__row [class="grid__col--6 theme__colors"] {
   background: #3fabca;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
 }
-
-[class="grid__col--4 theme__colors"] {
+.grid__row [class="grid__col--4 theme__colors"] {
   background: #7ee6fd;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
 }
-
-[class="grid__col--3 theme__colors"] {
+.grid__row [class="grid__col--3 theme__colors"] {
   background: #deb2ee;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
 }
-
-[class="grid__col--5 theme__colors"] {
+.grid__row [class="grid__col--5 theme__colors"] {
   background: #88d9a0;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
 }
-
-[class="grid__col--7 theme__colors"] {
+.grid__row [class="grid__col--7 theme__colors"] {
   background: #ec9fa3;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
 }
-
-[class="grid__col--8 theme__colors"] {
+.grid__row [class="grid__col--8 theme__colors"] {
   background: #fd9f85;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
 }
-
-[class="grid__col--7 theme__colors centered"] {
+.grid__row [class="grid__col--7 theme__colors centered"] {
   background: #ec9fa3;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=output.css.map */
