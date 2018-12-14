@@ -1,12 +1,18 @@
-// ---Navigation
+// === Navigation ===
 
 $first-multi: #58e1c1;
 
-.nav__item {
-  [href] {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+@mixin flex-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// --- navigation ---
+.nav {
+  a {
+    @include flex-mobile;
     text-align: center;
     text-decoration: none;
     color: black;
@@ -16,5 +22,12 @@ $first-multi: #58e1c1;
   [href="#type"] {
     background-color: $first-multi;
     color: white;
+  }
+  @media (min-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
   }
 }

@@ -22,6 +22,7 @@ $btn-info: #927bc1;
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0; //10px
+  flex-grow: 1;
 }
 
 .grid__col--12 {
@@ -48,5 +49,11 @@ $btn-info: #927bc1;
       background: $btn-info;
       @include button;
     }
+  }
+  @media (min-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
   }
 }

@@ -360,6 +360,7 @@ p {
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0;
+  flex-grow: 1;
 }
 .grid__col--12 .btn--success {
   background: #63cc82;
@@ -370,6 +371,7 @@ p {
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0;
+  flex-grow: 1;
 }
 .grid__col--12 .btn--error {
   background: #e4757a;
@@ -380,6 +382,7 @@ p {
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0;
+  flex-grow: 1;
 }
 .grid__col--12 .btn--warning {
   background: #fd7856;
@@ -390,6 +393,7 @@ p {
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0;
+  flex-grow: 1;
 }
 .grid__col--12 .btn--info {
   background: #927bc1;
@@ -400,6 +404,15 @@ p {
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0;
+  flex-grow: 1;
+}
+@media (min-width: 769px) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+  }
 }
 
 .form {
@@ -430,6 +443,100 @@ p {
   margin: 5px 20px;
 }
 
+.grid__row {
+  border: 1px solid black;
+  margin: 1.125em 0;
+}
+.grid__row [class="grid__col--12 theme__colors"] {
+  background: #80e8d1;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.grid__row [class="grid__col--6 theme__colors"] {
+  background: #3fabca;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.grid__row [class="grid__col--4 theme__colors"] {
+  background: #7ee6fd;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.grid__row [class="grid__col--3 theme__colors"] {
+  background: #deb2ee;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.grid__row [class="grid__col--5 theme__colors"] {
+  background: #88d9a0;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.grid__row [class="grid__col--7 theme__colors"] {
+  background: #ec9fa3;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.grid__row [class="grid__col--8 theme__colors"] {
+  background: #fd9f85;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.grid__row [class="grid__col--7 theme__colors centered"] {
+  background: #ec9fa3;
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (min-width: 769px) {
+  .grid__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+  }
+}
+
 .img--logo, .img--avatar {
   margin: 1em auto;
 }
@@ -439,7 +546,7 @@ p {
   border: 1px solid black;
 }
 
-.nav__item [href] {
+.nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -449,29 +556,42 @@ p {
   border-radius: 5px;
   padding: 1.125em;
 }
-.nav__item [href="#type"] {
+.nav [href="#type"] {
   background-color: #58e1c1;
   color: white;
+}
+@media (min-width: 769px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+  }
 }
 
 .container {
   font-size: 1em;
   margin: 1.875em auto;
+  text-align: center;
   max-width: 85%;
   padding: 0 0.625em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+}
+@media (min-width: 769px) {
+  .container {
+    max-width: 1125px;
+  }
 }
 
-.link {
+.card .link {
   text-decoration: none;
   color: #51ddfc;
   font-weight: bold;
 }
-
-.blockquote {
+.card .blockquote {
   font-size: 1.25em;
   font-weight: 500;
   text-align: left;
@@ -479,12 +599,20 @@ p {
   border-left: 8px solid #58e1c1;
   padding: 0 1.25em;
 }
-
-.headline--primary {
+.card .headline--primary {
   text-align: left;
   color: #58e1c1;
   font-size: 1.6875em;
   padding: 0 1em;
+}
+@media (min-width: 769px) {
+  .card {
+    max-width: 690px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 .headline--secondary {
