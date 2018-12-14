@@ -19,6 +19,7 @@ $second-multi: #51ddfc;
   max-width: 85%;
   padding: 0 0.625em; //10px
   @include flex-mobile;
+  font-family: sans-serif;
   @media (min-width: 769px) {
     max-width: 1125px;
   }
