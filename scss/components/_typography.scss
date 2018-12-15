@@ -31,7 +31,6 @@ $second-multi: #51ddfc;
     color: $second-multi;
     font-weight: bold;
   }
-
   .blockquote {
     font-size: 1.25em; //20px
     font-weight: 500;
@@ -40,7 +39,6 @@ $second-multi: #51ddfc;
     border-left: 8px solid $first-multi;
     padding: 0 1.25em; //20px
   }
-
   .headline--primary {
     text-align: left;
     color: $first-multi;
@@ -51,9 +49,8 @@ $second-multi: #51ddfc;
     max-width: 690px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-
   }
 }
 

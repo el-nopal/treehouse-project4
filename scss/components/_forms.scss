@@ -14,6 +14,18 @@ $second-multi: #51ddfc;
 // --- forms ---
 .form {
   @include flex-mobile;
+  .form__label--hidden {
+    visibility: hidden;
+  }
+  .form__input {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-style: none;
+    border-bottom: 7px solid $first-multi;
+    padding: 8px 16px;
+    margin: 5px 20px;
+  }
   [value="Login"] {
     background-color: $second-multi;
     color: white;
@@ -22,18 +34,7 @@ $second-multi: #51ddfc;
     padding: 16px;
     margin: 20px 0;
   }
-}
-
-.form__label--hidden {
-  visibility: hidden;
-}
-
-.form__input {
-  background-color: white;
-  color: black;
-  font-weight: bold;
-  border-style: none;
-  border-bottom: 7px solid $first-multi;
-  padding: 8px 16px;
-  margin: 5px 20px;
+  @media (min-width: 769px) {
+    margin: 10% 0;
+  }
 }
