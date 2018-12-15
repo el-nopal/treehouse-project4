@@ -8,6 +8,12 @@ $col-7: #ec9fa3;
 $col-8: #fd9f85;
 $col-12: #80e8d1;
 
+@mixin flex-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @mixin grid {
   text-align: left;
   border-radius: 5px;
@@ -19,10 +25,11 @@ $col-12: #80e8d1;
   flex-grow: 1;
 }
 
-@mixin flex-desktop {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+@mixin media-grid {
+  @media (min-width: 769px) {
+    text-align: center;
+    margin: 1.125em 5px;
+  }
 }
 
 @mixin media-q {
@@ -36,9 +43,8 @@ $col-12: #80e8d1;
 //  --- grid System
 
 .grid__row {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
+  // border: 1px solid black;
+  @mixin flex-mobile;
   margin: 1.125em 0;
   [class="grid__col--12 theme__colors"] {
     background: $col-12;
@@ -47,44 +53,32 @@ $col-12: #80e8d1;
   [class="grid__col--6 theme__colors"] {
     background: $col-6;
     @include grid;
-    @media (min-width: 769px) {
-      text-align: center;
-    }
+    @include media-grid;
   }
   [class="grid__col--4 theme__colors"] {
     background: $col-4;
     @include grid;
-    @media (min-width: 769px) {
-      text-align: center;
-    }
+    @include media-grid;
   }
   [class="grid__col--3 theme__colors"] {
     background: $col-3;
     @include grid;
-    @media (min-width: 769px) {
-      text-align: center;
-    }
+    @include media-grid;
   }
   [class="grid__col--5 theme__colors"] {
     background: $col-5;
     @include grid;
-    @media (min-width: 769px) {
-      text-align: center;
-    }
+    @include media-grid;
   }
   [class="grid__col--7 theme__colors"] {
     background: $col-7;
     @include grid;
-    @media (min-width: 769px) {
-      text-align: center;
-    }
+    @include media-grid;
   }
   [class="grid__col--8 theme__colors"] {
     background: $col-8;
     @include grid;
-    @media (min-width: 769px) {
-      text-align: center;
-    }
+    @include media-grid;
   }
   [class="grid__col--7 theme__colors centered"] {
     background: $col-7;
@@ -95,4 +89,13 @@ $col-12: #80e8d1;
     }
   }
   @include media-q;
+}
+
+@media (min-width: 769px) {
+  .grid__row.grid__col--7 {
+    padding-left: 20%;
+  }
+  .grid__row.grid__col--8 {
+    padding-right: 30%;
+  }
 }

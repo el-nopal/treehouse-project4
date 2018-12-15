@@ -25,6 +25,23 @@ $btn-info: #927bc1;
   flex-grow: 1;
 }
 
+@mixin media-grid {
+  @media (min-width: 769px) {
+    text-align: center;
+    margin: 1.125em 1.5em;
+  }
+}
+
+@mixin media-q {
+  @media (min-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+  }
+}
+
+// --- buttons
 .grid__col--12 {
   @include flex-mobile;
   text-align: center;
@@ -32,28 +49,28 @@ $btn-info: #927bc1;
     &--default {
       background: $second-multi;
       @include button;
+      @include media-grid;
     }
     &--success {
       background: $btn-success;
       @include button;
+      @include media-grid;
     }
     &--error {
       background: $btn-error;
       @include button;
+      @include media-grid;
     }
     &--warning {
       background: $btn-warning;
       @include button;
+      @include media-grid;
     }
     &--info {
       background: $btn-info;
       @include button;
+      @include media-grid;
     }
   }
-  @media (min-width: 769px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex: 1;
-  }
+  @include media-q;
 }

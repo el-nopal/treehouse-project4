@@ -14,7 +14,6 @@ $second-multi: #51ddfc;
 // --- forms ---
 .form {
   @include flex-mobile;
-  border: 1px solid black;
   .form__label--hidden {
     visibility: hidden;
   }
