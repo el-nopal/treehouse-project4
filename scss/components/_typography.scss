@@ -25,7 +25,6 @@ $second-multi: #51ddfc;
 }
 
 .card {
-  border: 1px solid black;
   @include flex-mobile;
   .link {
     text-decoration: none;
