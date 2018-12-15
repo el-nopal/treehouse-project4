@@ -14,6 +14,7 @@ $second-multi: #51ddfc;
 // --- forms ---
 .form {
   @include flex-mobile;
+  border: 1px solid black;
   .form__label--hidden {
     visibility: hidden;
   }
@@ -33,8 +34,5 @@ $second-multi: #51ddfc;
     border-radius: 7px;
     padding: 16px;
     margin: 20px 0;
-  }
-  @media (min-width: 769px) {
-    margin: 10% 0;
   }
 }
