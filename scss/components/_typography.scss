@@ -1,15 +1,17 @@
 // === Typography ===
+//
+// // -first- typo, look, border
+// $first-multi: #58e1c1;
+// // -second- link, login, default
+// $second-multi: #51ddfc;
+//
+// @mixin flex-mobile {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
 
-// -first- typo, look, border
-$first-multi: #58e1c1;
-// -second- link, login, default
-$second-multi: #51ddfc;
-
-@mixin flex-mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+@import "../utilities/index";
 
 // --- typography ---
 .container {

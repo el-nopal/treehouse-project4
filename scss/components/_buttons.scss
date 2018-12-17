@@ -1,12 +1,6 @@
 // === Buttons ===
 
-// -second- link, login, default
-$second-multi: #51ddfc;
-
-$btn-success: #63cc82;
-$btn-error: #e4757a;
-$btn-warning: #fd7856;
-$btn-info: #927bc1;
+@import "../utilities/index";
 
 @mixin flex-mobile {
   display: flex;

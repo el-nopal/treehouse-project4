@@ -1,22 +1,6 @@
 // === Navigation ===
 
-$first-multi: #58e1c1;
-
-
-@mixin flex-mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@mixin media-q {
-  @media (min-width: 769px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 7% 0;
-  }
-}
+@import "../utilities/index";
 
 // --- navigation ---
 .nav {
