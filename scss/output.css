@@ -474,7 +474,6 @@ p {
   margin: 20px 0;
 }
 
-/* ==== Variables ==== */
 .grid__row {
   display: flex;
   flex-direction: column;
@@ -506,7 +505,7 @@ p {
 @media (min-width: 769px) {
   .grid__row [class="grid__col--6 theme__colors"] {
     text-align: center;
-    margin: 1.125em 1.5em;
+    margin: 1.125em 5px;
   }
 }
 .grid__row [class="grid__col--4 theme__colors"] {
@@ -523,7 +522,7 @@ p {
 @media (min-width: 769px) {
   .grid__row [class="grid__col--4 theme__colors"] {
     text-align: center;
-    margin: 1.125em 1.5em;
+    margin: 1.125em 5px;
   }
 }
 .grid__row [class="grid__col--3 theme__colors"] {
@@ -540,7 +539,7 @@ p {
 @media (min-width: 769px) {
   .grid__row [class="grid__col--3 theme__colors"] {
     text-align: center;
-    margin: 1.125em 1.5em;
+    margin: 1.125em 5px;
   }
 }
 .grid__row [class="grid__col--5 theme__colors"] {
@@ -557,7 +556,7 @@ p {
 @media (min-width: 769px) {
   .grid__row [class="grid__col--5 theme__colors"] {
     text-align: center;
-    margin: 1.125em 1.5em;
+    margin: 1.125em 5px;
   }
 }
 .grid__row [class="grid__col--7 theme__colors"] {
@@ -575,7 +574,6 @@ p {
   .grid__row [class="grid__col--7 theme__colors"] {
     text-align: center;
     margin: 1.125em 5px;
-    padding-left: 20%;
   }
 }
 .grid__row [class="grid__col--8 theme__colors"] {
@@ -593,7 +591,6 @@ p {
   .grid__row [class="grid__col--8 theme__colors"] {
     text-align: center;
     margin: 1.125em 5px;
-    padding-right: 30%;
   }
 }
 .grid__row [class="grid__col--7 theme__colors centered"] {
@@ -618,7 +615,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex: 1;
   }
 }
 
@@ -660,7 +656,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex: 1;
   }
 }
 
