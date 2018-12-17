@@ -16,5 +16,10 @@
     background-color: $first-multi;
     color: white;
   }
-  @include media-q;
+  @media (min-width: $mq) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2em;
+  }
 }

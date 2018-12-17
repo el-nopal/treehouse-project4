@@ -1,4 +1,5 @@
 // === Mixins ===
+@import "variables";
 
 // --- general mixins
 @mixin button {
@@ -34,7 +35,7 @@
 
 //  --- media queries
 @mixin media-q {
-  @media (min-width: 769px) {
+  @media (min-width: $mq) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -42,14 +43,14 @@
 }
 
 @mixin media-grid {
-  @media $breakpoint {
+  @media (min-width: $mq) {
     text-align: center;
     margin: 1.125em 5px;
   }
 }
 
 @mixin media-button {
-  @media $breakpoint {
+  @media (min-width: $mq) {
     text-align: center;
     margin: 1.125em 1.5em;
     width: 10em;

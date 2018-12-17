@@ -1,4 +1,5 @@
 /* ==== Variables ==== */
+/* ==== Variables ==== */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -347,6 +348,7 @@ p {
 }
 
 /* ==== Variables ==== */
+/* ==== Variables ==== */
 .grid__col--12 {
   text-align: center;
   display: flex;
@@ -457,6 +459,7 @@ p {
 }
 
 /* ==== Variables ==== */
+/* ==== Variables ==== */
 .form {
   display: flex;
   flex-direction: column;
@@ -483,6 +486,7 @@ p {
   margin: 20px 0;
 }
 
+/* ==== Variables ==== */
 /* ==== Variables ==== */
 .grid__row {
   display: flex;
@@ -650,6 +654,7 @@ p {
 }
 
 /* ==== Variables ==== */
+/* ==== Variables ==== */
 .nav a {
   display: flex;
   flex-direction: column;
@@ -670,9 +675,11 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 2em;
   }
 }
 
+/* ==== Variables ==== */
 /* ==== Variables ==== */
 .container {
   font-size: 1em;

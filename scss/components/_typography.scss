@@ -9,7 +9,7 @@
   max-width: 85%;
   padding: 0 0.625em; //10px
   font-family: sans-serif;
-  @media $breakpoint {
+  @media (min-width: $mq) {
     max-width: 1125px;
   }
 }
@@ -37,7 +37,7 @@
     font-size: 1.6875em; // 27px
     padding: 0 1em;
   }
-  @media $breakpoint {
+  @media (min-width: $mq) {
     max-width: 90%;
   }
 }
