@@ -622,6 +622,15 @@ p {
   }
 }
 
+@media (min-width: 769px) {
+  .grid__row.grid__col--7 {
+    padding-left: 20%;
+  }
+
+  .grid__row.grid__col--8 {
+    padding-right: 30%;
+  }
+}
 .img--logo, .img--avatar {
   margin: 1em auto;
 }
