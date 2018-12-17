@@ -474,11 +474,12 @@ p {
   margin: 20px 0;
 }
 
+/* ==== Variables ==== */
 .grid__row {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1.125em 0;
+  margin: 1.125em 5px;
 }
 .grid__row [class="grid__col--12 theme__colors"] {
   background: #80e8d1;
@@ -489,7 +490,7 @@ p {
   margin: 6px 0;
   font-size: 14px;
   font-weight: 500;
-  flex-grow: 1;
+  flex: 1;
 }
 .grid__row [class="grid__col--6 theme__colors"] {
   background: #3fabca;
@@ -500,7 +501,7 @@ p {
   margin: 6px 0;
   font-size: 14px;
   font-weight: 500;
-  flex-grow: 1;
+  flex: 1;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--6 theme__colors"] {
@@ -517,7 +518,7 @@ p {
   margin: 6px 0;
   font-size: 14px;
   font-weight: 500;
-  flex-grow: 1;
+  flex: 1;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--4 theme__colors"] {
@@ -534,7 +535,7 @@ p {
   margin: 6px 0;
   font-size: 14px;
   font-weight: 500;
-  flex-grow: 1;
+  flex: 1;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--3 theme__colors"] {
@@ -551,7 +552,7 @@ p {
   margin: 6px 0;
   font-size: 14px;
   font-weight: 500;
-  flex-grow: 1;
+  flex: 1;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--5 theme__colors"] {
@@ -568,12 +569,14 @@ p {
   margin: 6px 0;
   font-size: 14px;
   font-weight: 500;
-  flex-grow: 1;
+  flex: 1;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--7 theme__colors"] {
     text-align: center;
     margin: 1.125em 5px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 .grid__row [class="grid__col--8 theme__colors"] {
@@ -585,12 +588,14 @@ p {
   margin: 6px 0;
   font-size: 14px;
   font-weight: 500;
-  flex-grow: 1;
+  flex: 1;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--8 theme__colors"] {
     text-align: center;
     margin: 1.125em 5px;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 .grid__row [class="grid__col--7 theme__colors centered"] {
@@ -602,7 +607,7 @@ p {
   margin: 6px 0;
   font-size: 14px;
   font-weight: 500;
-  flex-grow: 1;
+  flex: 1;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--7 theme__colors centered"] {
@@ -615,18 +620,10 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex: 1;
   }
 }
 
-@media (min-width: 769px) {
-  .grid__row.grid__col--7 {
-    padding-left: 20%;
-  }
-
-  .grid__row.grid__col--8 {
-    padding-right: 30%;
-  }
-}
 .img--logo, .img--avatar {
   margin: 1em auto;
 }
@@ -656,6 +653,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex: 1;
   }
 }
 

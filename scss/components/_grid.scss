@@ -1,12 +1,44 @@
 // === Grid ===
-@import "utilities/index";
+@import "../utilities/index";
+
+// @mixin flex-mobile {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
+
+// @mixin media-q {
+//   @media (min-width: 769px) {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//   }
+// }
+//
+
+@mixin media-grid {
+  @media (min-width: 769px) {
+    text-align: center;
+    margin: 1.125em 5px;
+  }
+}
+
+@mixin grid {
+  text-align: left;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1em 1em;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+}
 
 //  --- grid System
 
 .grid__row {
-  // border: 1px solid black;
   @include flex-mobile;
-  margin: 1.125em 0;
+  margin: 1.125em 5px;
   [class="grid__col--12 theme__colors"] {
     background: $col-12;
     @include grid;
@@ -34,12 +66,22 @@
   [class="grid__col--7 theme__colors"] {
     background: $col-7;
     @include grid;
-    @include media-grid;
+    @media (min-width: 769px) {
+      text-align: center;
+      margin: 1.125em 5px;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
   }
   [class="grid__col--8 theme__colors"] {
     background: $col-8;
     @include grid;
-    @include media-grid;
+    @media (min-width: 769px) {
+      text-align: center;
+      margin: 1.125em 5px;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
   }
   [class="grid__col--7 theme__colors centered"] {
     background: $col-7;
@@ -50,13 +92,4 @@
     }
   }
   @include media-q;
-}
-
-@media (min-width: 769px) {
-  .grid__row.grid__col--7 {
-    padding-left: 20%;
-  }
-  .grid__row.grid__col--8 {
-    padding-right: 30%;
-  }
 }

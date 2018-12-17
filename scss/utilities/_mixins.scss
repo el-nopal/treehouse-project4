@@ -1,28 +1,6 @@
 // === Mixins ===
 
-// ---flex box
-@mixin flex-mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-//  --- media queries
-@mixin media-q {
-  @media (min-width: 769px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-@mixin media-grid {
-  @media (min-width: 769px) {
-    text-align: center;
-    margin: 1.125em 5px;
-  }
-}
-
-// --- general mixins 
+// --- general mixins
 @mixin button {
   color: white;
   font-size: 1em;
@@ -41,4 +19,36 @@
   margin: 6px 0;
   font-size: 14px;
   font-weight: 500;
+  flex: 1;
+}
+
+// ---flex box
+
+@mixin flex-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+//  --- media queries
+@mixin media-q {
+  @media (min-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@mixin media-grid {
+  @media (min-width: 769px) {
+    text-align: center;
+    margin: 1.125em 5px;
+  }
+}
+
+@mixin media-button {
+  @media (min-width: 769px) {
+    text-align: center;
+    margin: 1.125em 1.5em;
+  }
 }

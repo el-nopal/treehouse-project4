@@ -1,5 +1,4 @@
 // === Buttons ===
-
 @import "../utilities/index";
 
 @mixin flex-mobile {
@@ -19,7 +18,7 @@
   flex-grow: 1;
 }
 
-@mixin media-grid {
+@mixin media-button {
   @media (min-width: 769px) {
     text-align: center;
     margin: 1.125em 1.5em;
@@ -36,6 +35,7 @@
 }
 
 // --- buttons
+
 .grid__col--12 {
   @include flex-mobile;
   text-align: center;
@@ -43,27 +43,27 @@
     &--default {
       background: $second-multi;
       @include button;
-      @include media-grid;
+      @include media-button;
     }
     &--success {
       background: $btn-success;
       @include button;
-      @include media-grid;
+      @include media-button;
     }
     &--error {
       background: $btn-error;
       @include button;
-      @include media-grid;
+      @include media-button;
     }
     &--warning {
       background: $btn-warning;
       @include button;
-      @include media-grid;
+      @include media-button;
     }
     &--info {
       background: $btn-info;
       @include button;
-      @include media-grid;
+      @include media-button;
     }
   }
   @include media-q;
