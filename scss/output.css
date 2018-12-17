@@ -659,6 +659,7 @@ p {
   color: black;
   border-radius: 5px;
   padding: 1.125em;
+  font-family: times, sans-serif;
 }
 .nav [href="#type"] {
   background-color: #58e1c1;
