@@ -348,10 +348,10 @@ p {
 
 /* ==== Variables ==== */
 .grid__col--12 {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
 .grid__col--12 .btn--default {
   background: #51ddfc;
@@ -362,12 +362,14 @@ p {
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0;
-  flex-grow: 1;
+  font-family: times, sans-serif;
 }
 @media (min-width: 769px) {
   .grid__col--12 .btn--default {
     text-align: center;
     margin: 1.125em 1.5em;
+    width: 10em;
+    flex: 1;
   }
 }
 .grid__col--12 .btn--success {
@@ -379,12 +381,14 @@ p {
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0;
-  flex-grow: 1;
+  font-family: times, sans-serif;
 }
 @media (min-width: 769px) {
   .grid__col--12 .btn--success {
     text-align: center;
     margin: 1.125em 1.5em;
+    width: 10em;
+    flex: 1;
   }
 }
 .grid__col--12 .btn--error {
@@ -396,12 +400,14 @@ p {
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0;
-  flex-grow: 1;
+  font-family: times, sans-serif;
 }
 @media (min-width: 769px) {
   .grid__col--12 .btn--error {
     text-align: center;
     margin: 1.125em 1.5em;
+    width: 10em;
+    flex: 1;
   }
 }
 .grid__col--12 .btn--warning {
@@ -413,12 +419,14 @@ p {
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0;
-  flex-grow: 1;
+  font-family: times, sans-serif;
 }
 @media (min-width: 769px) {
   .grid__col--12 .btn--warning {
     text-align: center;
     margin: 1.125em 1.5em;
+    width: 10em;
+    flex: 1;
   }
 }
 .grid__col--12 .btn--info {
@@ -430,12 +438,14 @@ p {
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0;
-  flex-grow: 1;
+  font-family: times, sans-serif;
 }
 @media (min-width: 769px) {
   .grid__col--12 .btn--info {
     text-align: center;
     margin: 1.125em 1.5em;
+    width: 10em;
+    flex: 1;
   }
 }
 @media (min-width: 769px) {
@@ -443,7 +453,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex: 1;
   }
 }
 
@@ -491,6 +500,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   flex: 1;
+  font-family: courier, monospace;
 }
 .grid__row [class="grid__col--6 theme__colors"] {
   background: #3fabca;
@@ -502,6 +512,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   flex: 1;
+  font-family: courier, monospace;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--6 theme__colors"] {
@@ -519,6 +530,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   flex: 1;
+  font-family: courier, monospace;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--4 theme__colors"] {
@@ -536,6 +548,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   flex: 1;
+  font-family: courier, monospace;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--3 theme__colors"] {
@@ -553,6 +566,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   flex: 1;
+  font-family: courier, monospace;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--5 theme__colors"] {
@@ -570,6 +584,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   flex: 1;
+  font-family: courier, monospace;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--7 theme__colors"] {
@@ -589,6 +604,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   flex: 1;
+  font-family: courier, monospace;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--8 theme__colors"] {
@@ -608,6 +624,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   flex: 1;
+  font-family: courier, monospace;
 }
 @media (min-width: 769px) {
   .grid__row [class="grid__col--7 theme__colors centered"] {
@@ -620,7 +637,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex: 1;
   }
 }
 
@@ -653,7 +669,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex: 1;
   }
 }
 
@@ -676,6 +691,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: helvetica, sans-serif;
 }
 .card .link {
   text-decoration: none;
@@ -689,6 +705,7 @@ p {
   border-radius: 5px;
   border-left: 8px solid #58e1c1;
   padding: 0 1.25em;
+  font-family: times, sans-serif;
 }
 .card .headline--primary {
   text-align: left;

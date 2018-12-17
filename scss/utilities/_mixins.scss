@@ -9,6 +9,7 @@
   border-style: none;
   padding: 1em 0;
   margin: 0.625em 0; //10px
+  font-family: $times;
 }
 
 @mixin grid {
@@ -20,6 +21,7 @@
   font-size: 14px;
   font-weight: 500;
   flex: 1;
+  font-family: $courier;
 }
 
 // ---flex box
@@ -50,5 +52,7 @@
   @media (min-width: 769px) {
     text-align: center;
     margin: 1.125em 1.5em;
+    width: 10em;
+    flex: 1;
   }
 }

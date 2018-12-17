@@ -16,6 +16,7 @@
 
 .card {
   @include flex-mobile;
+  font-family: $helvetica;
   .link {
     text-decoration: none;
     color: $second-multi;
@@ -28,6 +29,7 @@
     border-radius: 5px;
     border-left: 8px solid $first-multi;
     padding: 0 1.25em; //20px
+    font-family: $times;
   }
   .headline--primary {
     text-align: left;

@@ -1,5 +1,4 @@
 // === Navigation ===
-
 @import "../utilities/index";
 
 // --- navigation ---
@@ -11,6 +10,7 @@
     color: black;
     border-radius: 5px;
     padding: 1.125em; //18px
+    font-family: $times;
   }
   [href="#type"] {
     background-color: $first-multi;

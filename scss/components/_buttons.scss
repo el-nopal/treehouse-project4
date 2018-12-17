@@ -1,44 +1,10 @@
 // === Buttons ===
 @import "../utilities/index";
 
-@mixin flex-mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@mixin button {
-  color: white;
-  font-size: 1em;
-  text-transform: uppercase;
-  border-radius: 5px;
-  border-style: none;
-  padding: 1em 0;
-  margin: 0.625em 0; //10px
-  flex-grow: 1;
-}
-
-@mixin media-button {
-  @media (min-width: 769px) {
-    text-align: center;
-    margin: 1.125em 1.5em;
-  }
-}
-
-@mixin media-q {
-  @media (min-width: 769px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex: 1;
-  }
-}
-
 // --- buttons
-
 .grid__col--12 {
-  @include flex-mobile;
   text-align: center;
+  @include flex-mobile;
   .btn {
     &--default {
       background: $second-multi;
